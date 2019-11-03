@@ -1,0 +1,51 @@
+{
+	"name": "natanfelles/theme",
+	"type": "project",
+	"description": "The Framework Theme Library",
+	"keywords": [
+		"theme"
+	],
+	"homepage": "https://the-framework.gitlab.io/theme.html",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Natan Felles",
+			"email": "natanfelles@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=7.3"
+	},
+	"require-dev": {
+		"ext-xdebug": "*",
+		"localheinz/composer-normalize": "^1.3",
+		"natanfelles/coding-standard": "^1.0",
+		"phpmd/phpmd": "^2.7",
+		"phpstan/phpstan": "^0.11",
+		"phpunit/phpunit": "^8.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Framework\\Theme\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\Theme\\": "tests/"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"scripts": {
+		"post-update-cmd": [
+			"composer dump-autoload"
+		]
+	},
+	"support": {
+		"email": "natanfelles@gmail.com",
+		"issues": "https://gitlab.com/the-framework/libraries/theme/issues",
+		"wiki": "https://gitlab.com/the-framework/libraries/theme/wikis/home",
+		"source": "https://gitlab.com/libraries/the-framework/theme",
+		"docs": "https://the-framework.gitlab.io/libraries/theme/docs/"
+	}
+}
