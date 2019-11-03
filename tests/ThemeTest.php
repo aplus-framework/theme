@@ -30,16 +30,16 @@ class ThemeTest extends TestCase
 			['content' => 'IE=edge', 'http-equiv' => 'X-UA-Compatible'],
 		]);
 		$this->assertEquals(<<<EOL
-<meta content="object" property="og:type" >
-<meta content="IE=edge" http-equiv="X-UA-Compatible" >
+<meta content="object" property="og:type">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
 
 EOL
 			, $this->theme->renderMetas());
 		$this->theme->addMeta(['charset' => 'utf-8']);
 		$this->assertEquals(<<<EOL
-<meta content="object" property="og:type" >
-<meta content="IE=edge" http-equiv="X-UA-Compatible" >
-<meta charset="utf-8" >
+<meta content="object" property="og:type">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta charset="utf-8">
 
 EOL
 			, $this->theme->renderMetas());
@@ -50,6 +50,6 @@ EOL
 		$this->assertEquals('', $this->theme->getTitle());
 		$this->theme->setTitle('Foo Bar');
 		$this->assertEquals('Foo Bar', $this->theme->getTitle());
-		$this->assertEquals('<title>Foo Bar</title>', $this->theme->renderTitle());
+		$this->assertEquals('<title>Foo Bar</title>' . \PHP_EOL, $this->theme->renderTitle());
 	}
 }
