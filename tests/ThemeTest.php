@@ -26,7 +26,7 @@ class ThemeTest extends TestCase
 	{
 		$this->assertEquals('', $this->theme->renderMetas());
 		$this->theme->setMetas([
-			['content' => 'object', 'property' => 'og:type',],
+			['content' => 'object', 'property' => 'og:type'],
 			['content' => 'IE=edge', 'http-equiv' => 'X-UA-Compatible'],
 		]);
 		$this->assertEquals(<<<EOL

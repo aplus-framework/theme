@@ -136,8 +136,7 @@ class Theme
 	{
 		$content = '';
 		foreach ($this->getScripts() as $script) {
-			$content .= '<script src="' . $this->escape($script)
-				. '" type="text/javascript"></script>' . \PHP_EOL;
+			$content .= '<script src="' . $this->escape($script) . '"></script>' . \PHP_EOL;
 		}
 		return $content;
 	}
