@@ -1,6 +1,6 @@
 {
 	"name": "natanfelles/theme",
-	"type": "project",
+	"type": "library",
 	"description": "The Framework Theme Library",
 	"keywords": [
 		"theme"
@@ -45,7 +45,7 @@
 		"email": "natanfelles@gmail.com",
 		"issues": "https://gitlab.com/the-framework/libraries/theme/issues",
 		"wiki": "https://gitlab.com/the-framework/libraries/theme/wikis/home",
-		"source": "https://gitlab.com/libraries/the-framework/theme",
+		"source": "https://gitlab.com/the-framework/libraries/theme",
 		"docs": "https://the-framework.gitlab.io/libraries/theme/docs/"
 	}
 }
