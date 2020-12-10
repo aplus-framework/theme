@@ -2,35 +2,62 @@
 
 class Theme
 {
-	protected $lang = 'en';
-	protected $metas = [];
-	protected $title = '';
-	protected $body = '';
-	protected $styles = [];
-	protected $scripts = [];
+	protected string $lang = 'en';
+	/**
+	 * @var array|array[]
+	 */
+	protected array $metas = [];
+	protected string $title = '';
+	protected string $body = '';
+	/**
+	 * @var array|string[]
+	 */
+	protected array $styles = [];
+	/**
+	 * @var array|string[]
+	 */
+	protected array $scripts = [];
 
 	public function getLang() : string
 	{
 		return $this->lang;
 	}
 
+	/**
+	 * @param string $lang
+	 *
+	 * @return $this
+	 */
 	public function setLang(string $lang)
 	{
 		$this->lang = $lang;
 		return $this;
 	}
 
+	/**
+	 * @return array|array[]
+	 */
 	public function getMetas() : array
 	{
 		return $this->metas;
 	}
 
+	/**
+	 * @param array|array[] $metas
+	 *
+	 * @return $this
+	 */
 	public function setMetas(array $metas)
 	{
 		$this->metas = $metas;
 		return $this;
 	}
 
+	/**
+	 * @param array|string[] $meta
+	 *
+	 * @return $this
+	 */
 	public function addMeta(array $meta)
 	{
 		$this->metas[] = $meta;
@@ -55,6 +82,11 @@ class Theme
 		return $this->title;
 	}
 
+	/**
+	 * @param string $title
+	 *
+	 * @return $this
+	 */
 	public function setTitle(string $title)
 	{
 		$this->title = $title;
@@ -71,29 +103,52 @@ class Theme
 		return $this->body;
 	}
 
+	/**
+	 * @param string $body
+	 *
+	 * @return $this
+	 */
 	public function setBody(string $body)
 	{
 		$this->body = $body;
 		return $this;
 	}
 
+	/**
+	 * @return array|string[]
+	 */
 	public function getStyles() : array
 	{
 		return $this->styles;
 	}
 
+	/**
+	 * @param array|string[] $styles
+	 *
+	 * @return $this
+	 */
 	public function setStyles(array $styles)
 	{
 		$this->styles = $styles;
 		return $this;
 	}
 
+	/**
+	 * @param array|string[] $styles
+	 *
+	 * @return $this
+	 */
 	public function appendStyles(array $styles)
 	{
 		\array_push($this->styles, ...$styles);
 		return $this;
 	}
 
+	/**
+	 * @param array|string[] $styles
+	 *
+	 * @return $this
+	 */
 	public function prependStyles(array $styles)
 	{
 		\array_unshift($this->styles, ...$styles);
@@ -109,23 +164,41 @@ class Theme
 		return $content;
 	}
 
+	/**
+	 * @return array|string[]
+	 */
 	public function getScripts() : array
 	{
 		return $this->scripts;
 	}
 
+	/**
+	 * @param array|string[] $scripts
+	 *
+	 * @return $this
+	 */
 	public function setScripts(array $scripts)
 	{
 		$this->scripts = $scripts;
 		return $this;
 	}
 
+	/**
+	 * @param array|string[] $scripts
+	 *
+	 * @return $this
+	 */
 	public function appendScripts(array $scripts)
 	{
 		\array_push($this->scripts, ...$scripts);
 		return $this;
 	}
 
+	/**
+	 * @param array|string[] $scripts
+	 *
+	 * @return $this
+	 */
 	public function prependScripts(array $scripts)
 	{
 		\array_unshift($this->scripts, ...$scripts);

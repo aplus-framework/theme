@@ -5,10 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 class ThemeTest extends TestCase
 {
-	/**
-	 * @var Theme
-	 */
-	protected $theme;
+	protected Theme $theme;
 
 	public function setup() : void
 	{
