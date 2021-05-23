@@ -1,4 +1,4 @@
-# Framework Theme Library
+# The Framework Theme Library
 
 - [Homepage](https://the-framework.gitlab.io/libraries/theme.html)
 - [API Documentation](https://the-framework.gitlab.io/libraries/theme/docs/)
