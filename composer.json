@@ -1,51 +1,51 @@
 {
-	"name": "natanfelles/theme",
-	"type": "library",
-	"description": "The Framework Theme Library",
-	"keywords": [
-		"theme"
-	],
-	"homepage": "https://the-framework.gitlab.io/theme.html",
-	"license": "proprietary",
-	"authors": [
-		{
-			"name": "Natan Felles",
-			"email": "natanfelles@gmail.com"
-		}
-	],
-	"require": {
-		"php": ">=8.0"
-	},
-	"require-dev": {
-		"ext-xdebug": "*",
-		"ergebnis/composer-normalize": "^2.13",
-		"natanfelles/coding-standard": "^1.5",
-		"phpmd/phpmd": "^2.10",
-		"phpstan/phpstan": "^0.12",
-		"phpunit/phpunit": "^9.5"
-	},
-	"config": {
-		"optimize-autoloader": true,
-		"preferred-install": "dist",
-		"sort-packages": true
-	},
-	"autoload": {
-		"psr-4": {
-			"Framework\\Theme\\": "src/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Tests\\Theme\\": "tests/"
-		}
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"support": {
-		"email": "natanfelles@gmail.com",
-		"issues": "https://gitlab.com/the-framework/libraries/theme/issues",
-		"wiki": "https://gitlab.com/the-framework/libraries/theme/wikis/home",
-		"source": "https://gitlab.com/the-framework/libraries/theme",
-		"docs": "https://the-framework.gitlab.io/libraries/theme/docs/"
-	}
+    "name": "natanfelles/theme",
+    "type": "library",
+    "description": "The Framework Theme Library",
+    "keywords": [
+        "theme"
+    ],
+    "homepage": "https://the-framework.gitlab.io/theme.html",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Natan Felles",
+            "email": "natanfelles@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "ergebnis/composer-normalize": "^2.13",
+        "natanfelles/coding-standard": "^1.5",
+        "phpmd/phpmd": "^2.10",
+        "phpstan/phpstan": "^0.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Framework\\Theme\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Theme\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "support": {
+        "email": "natanfelles@gmail.com",
+        "issues": "https://gitlab.com/the-framework/libraries/theme/issues",
+        "wiki": "https://gitlab.com/the-framework/libraries/theme/wikis/home",
+        "source": "https://gitlab.com/the-framework/libraries/theme",
+        "docs": "https://the-framework.gitlab.io/libraries/theme/docs/"
+    }
 }
