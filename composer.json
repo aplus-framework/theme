@@ -1,11 +1,11 @@
 {
-    "name": "natanfelles/theme",
+    "name": "aplus/theme",
     "type": "library",
-    "description": "The Framework Theme Library",
+    "description": "Aplus Framework Theme Library",
     "keywords": [
         "theme"
     ],
-    "homepage": "https://the-framework.gitlab.io/theme.html",
+    "homepage": "https://aplus-framework.com/docs/theme",
     "license": "proprietary",
     "authors": [
         {
@@ -43,9 +43,9 @@
     "prefer-stable": true,
     "support": {
         "email": "natanfelles@gmail.com",
-        "issues": "https://gitlab.com/the-framework/libraries/theme/issues",
-        "wiki": "https://gitlab.com/the-framework/libraries/theme/wikis/home",
-        "source": "https://gitlab.com/the-framework/libraries/theme",
-        "docs": "https://the-framework.gitlab.io/libraries/theme/docs/"
+        "issues": "https://gitlab.com/aplus-framework/libraries/theme/issues",
+        "wiki": "https://gitlab.com/aplus-framework/libraries/theme/wikis/home",
+        "source": "https://gitlab.com/aplus-framework/libraries/theme",
+        "docs": "https://aplus-framework.gitlab.io/libraries/theme/docs/"
     }
 }
